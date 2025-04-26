@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="You can book you Movies from here">
+    <title>Movie Booking Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <img src="filmiquelogo.png" class="logo" alt="FilmiqueCinemaslogo">
+
+        
+
+
+<div class="centered-content">
+    <form class="search-form" action="#" method="get">
+        <input type="text" name="select" placeholder="search...">
+        <button type="submit">Search</button>
+    </form>
+</div>
+        
+<h1>Filmique Cinemas</h1>
+
+
+    <br>
+    <br>
+    
+
+</header>
+
+<main>
+<br>
+<br>
+
+    
+<div class="movie-category">
+    <h2 id="set-01">Now Showing</h2>
+    <div class="flex-container">
+        <div class="movie-item">
+                    <img src="Avatar.webp" alt="Avatar: The Way of Water (2022)">
+                    <p>Avatar: The Way of Water (2022)</p>
+                    <p>$8</p>
+                    <label for="01-quantity">Seats</label>
+                    <input type="number" id="01-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Avatar: The Way of Water (2022)" data-price="8">Add to Cart</button>
+                </div>
+                <div class="movie-item">
+                    <img src="Gravity.jpg" alt="Gravity (2013)">
+                    <p>Gravity (2013)</p>
+                    <p>$8</p>
+                    <label for="02-quantity">No.of Seats</label>
+                    <input type="number" id="02-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Gravity (2013)" data-price="8">Add to Cart</button>
+                </div>
+                <div class="movie-item">
+                    <img src="Interstellar.jpg" alt="Interstellar (2014)">
+                    <p>Interstellar (2014)</p>
+                    <p>$8</p>
+                    <label for="03-quantity">No.of Seats</label>
+                    <input type="number" id="03-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Interstellar (2014)" data-price="8">Add to Cart</button>
+                </div>
+                <div class="movie-item">
+                    <img src="330px-The_dark_knight.webp" alt="The Dark Knight (2008)">
+                    <p>The Dark Knight (2008)</p>
+                    <p>$8</p>
+                    <label for="04-quantity">No.of Seats</label>
+                    <input type="number" id="04-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="The Dark Knight (2008)" data-price="8">Add to Cart</button>
+                </div>
+                <div class="movie-item">
+                    <img src="DoctorStrange.jpg" alt="Doctor Strange (2016)">
+                    <p>Doctor Strange (2016)</p>
+                    <p>$8</p>
+                    <label for="05-quantity">No.of Seats</label>
+                    <input type="number" id="05-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Doctor Strange (2016)" data-price="8">Add to Cart</button>
+                </div>
+                <div class="movie-item">
+                    <img src="JurassicWorld(2015).webp" alt="Jurassic World (2015)">
+                    <p>Jurassic World (2015)</p>
+                    <p>$8</p>
+                    <label for="06-quantity">No.of Seats</label>
+                    <input type="number" id="06-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Jurassic World (2015)" data-price="8">Add to Cart</button>
+                </div>
+                <div class="movie-item">
+                    <img src="AvengersEndgame.jpg" alt="Avengers Endgame (2019)">
+                    <p>Avengers Endgame (2019)</p>
+                    <p>$8</p>
+                    <label for="07-quantity">No.of Seats</label>
+                    <input type="number" id="07-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Avengers Endgame (2019)" data-price="8">Add to Cart</button>
+                </div>
+                <div class="movie-item">
+                    <img src="Star.jpg" alt="Star Wars The Force Awakens (2015)">
+                    <p>Star Wars: The Force Awakens (2015)</p>
+                    <p>$8</p>
+                    <label for="08-quantity">No.of Seats</label>
+                    <input type="number" id="08-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Star Wars The Force Awakens (2015)" data-price="8">Add to Cart</button>
+                </div>
+                <div class="movie-item">
+                    <img src="Deadpool.png" alt="Deadpool (2016)">
+                    <p>Deadpool (2016)</p>
+                    <p>$8</p>
+                    <label for="09-quantity">No.of Seats</label>
+                    <input type="number" id="09-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Deadpool (2016)" data-price="8">Add to Cart</button>
+                </div>
+                <div class="movie-item">
+                    <img src="HarryPotter.jpg" alt="Harry Potter and the Sorcerer's Stone (2011)">
+                    <p>Harry Potter and the Sorcerer's Stone (2011)</p>
+                    <p>$8</p>
+                    <label for="10-quantity">No.of Seats</label>
+                    <input type="number" id="10-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Harry Potter and the Sorcerer's Stone (2011)" data-price="8">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        
+<div class="movie-category">
+            <h2 id="set-02">Upcoming Movies</h2>
+            <div class="flex-container">
+
+                <div class="movie-item">
+                    <img src="TransformersAge.jpg" alt="Transformers: Age of Extinction (2014)">
+                    <p>Transformers: Age of Extinction (2014)</p>
+                    <p>$9</p>
+                    <label for="11-quantity">No.of Seats</label>
+                    <input type="number" id="11-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Transformers: Age of Extinction (2014)" data-price="9">Add to Cart</button>
+                </div>
+            
+                <div class="movie-item">
+                    <img src="TheHobbit.jpg" alt="The Hobbit: An Unexpected Journey (2012)">
+                    <p>The Hobbit: An Unexpected Journey (2012)</p>
+                    <p>$9</p>
+                    <label for="12-quantity">No.of Seats</label>
+                    <input type="number" id="12-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="The Hobbit: An Unexpected Journey (2012)" data-price="9">Add to Cart</button>
+                </div>
+            
+                <div class="movie-item">
+                    <img src="TheLionKing(2019).jpg" alt="The Lion King (2019)">
+                    <p>The Lion King (2019)</p>
+                    <p>$9</p>
+                    <label for="13-quantity">No.of Seats</label>
+                    <input type="number" id="13-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="The Lion King (2019)" data-price="9">Add to Cart</button>
+                </div>
+        
+                <div class="movie-item">
+                    <img src="Zootopia.jpg" alt="Zootopia 2">
+                    <p>Zootopia 2</p>
+                    <p>$9</p>
+                    <label for="14-quantity">No.of Seats</label>
+                    <input type="number" id="14-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Zootopia 2" data-price="9">Add to Cart</button>
+                </div>
+                
+                <div class="movie-item">
+                    <img src="ToyStory4.jpg" alt="Toy Story 4 (2019)">
+                    <p>Toy Story 4 (2019)</p>
+                    <p>$9</p>
+                    <label for="15-quantity">No.of Seats</label>
+                    <input type="number" id="15-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Toy Story 4 (2019)" data-price="9">Add to Cart</button>
+                </div>
+                
+                <div class="movie-item">
+                    <img src="incredibles2.jpg" alt="The Incredibles 2 (2018)">
+                    <p>The Incredibles 2 (2018)</p>
+                    <p>$9</p>
+                    <label for="16-quantity">No.of Seats</label>
+                    <input type="number" id="16-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="The Incredibles 2 (2018)" data-price="9">Add to Cart</button>
+                </div>
+        
+                <div class="movie-item">
+                    <img src="WonderWoman(2017).jpg" alt="Wonder Woman (2017)">
+                    <p>Wonder Woman (2017)</p>
+                    <p>$9</p>
+                    <label for="17-quantity">No.of Seats</label>
+                    <input type="number" id="17-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Wonder Woman (2017)" data-price="9">Add to Cart</button>
+                </div>
+    
+                <div class="movie-item">
+                    <img src="JurassicWorld(2015).webp" alt="Jurassic World (2015)">
+                    <p>Jurassic World (2015)</p>
+                    <p>$9</p>
+                    <label for="18-quantity">No.of Seats</label>
+                    <input type="number" id="18-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Jurassic World (2015)" data-price="9">Add to Cart</button>
+                </div>
+                
+                <div class="movie-item">
+                    <img src="Deadpool.png" alt="Deadpool (2016)">
+                    <p>Deadpool (2016)</p>
+                    <p>$9</p>
+                    <label for="19-quantity">No.of Seats</label>
+                    <input type="number" id="19-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Deadpool (2016)" data-price="9">Add to Cart</button>
+                </div>
+        
+                <div class="movie-item">
+                    <img src="guardians.jpg" alt="Guardians of the Galaxy (2014)">
+                    <p>Guardians of the Galaxy (2014)</p>
+                    <p>$9</p>
+                    <label for="20-quantity">No.of Seats</label>
+                    <input type="number" id="20-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Guardians of the Galaxy (2014)" data-price="9">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        
+
+    
+        <div class="movie-category">
+            <h2 id="set-03">Premier Screenings</h2>
+            <div class="flex-container">
+            
+                <div class="movie-item">
+                    <img src="Avatar.webp" alt="Avatar: The Way of Water (2022)">
+                    <p>Avatar: The Way of Water (2022)</p>
+                    <p>$10</p>
+                    <label for="21-quantity">No.of Seats</label>
+                    <input type="number" id="21-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Avatar: The Way of Water (2022)" data-price="10">Add to Cart</button>
+                </div>
+                
+                <div class="movie-item">
+                    <img src="Inception.jpg" alt="Inception (2010)">
+                    <p>Inception (2010)</p>
+                    <p>$10</p>
+                    <label for="22-quantity">No.of Seats</label>
+                    <input type="number" id="22-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Inception (2010)" data-price="10">Add to Cart</button>
+                </div>
+                
+                <div class="movie-item">
+                    <img src="TheDarkKnight.jpg" alt="The Dark Knight (2008)">
+                    <p>The Dark Knight (2008)</p>
+                    <p>$10</p>
+                    <label for="23-quantity">No.of Seats</label>
+                    <input type="number" id="23-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="The Dark Knight (2008)" data-price="10">Add to Cart</button>
+                </div>
+        
+                <div class="movie-item">
+                    <img src="Interstellar.jpg" alt="Interstellar (2014)">
+                    <p>Interstellar (2014)</p>
+                    <p>$10</p>
+                    <label for="24-quantity">No.of Seats</label>
+                    <input type="number" id="24-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Interstellar (2014)" data-price="10">Add to Cart</button>
+                </div>
+                
+                <div class="movie-item">
+                    <img src="TheHobbit.jpg" alt="The Hobbit: An Unexpected Journey (2012)">
+                    <p>The Hobbit: An Unexpected Journey (2012)</p>
+                    <p>$10</p>
+                    <label for="25-quantity">No.of Seats</label>
+                    <input type="number" id="25-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="The Hobbit: An Unexpected Journey (2012)" data-price="10">Add to Cart</button>
+                </div>
+                
+                <div class="movie-item">
+                    <img src="guardians.jpg" alt="Guardians of the Galaxy (2014)">
+                    <p>Guardians of the Galaxy (2014)</p>
+                    <p>$10</p>
+                    <label for="26-quantity">No.of Seats</label>
+                    <input type="number" id="26-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Guardians of the Galaxy (2014)" data-price="10">Add to Cart</button>
+                </div>
+                
+                <div class="movie-item">
+                    <img src="AvengersEndgame.jpg" alt="Avengers: Endgame (2019)">
+                    <p>Avengers: Endgame (2019)</p>
+                    <p>$10</p>
+                    <label for="27-quantity">No.of Seats</label>
+                    <input type="number" id="27-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Avengers: Endgame (2019)" data-price="10">Add to Cart</button>
+                </div>
+                
+                <div class="movie-item">
+                    <img src="TheLionKing.jpg" alt="The Lion King (2019)">
+                    <p>The Lion King (2019)</p>
+                    <p>$10</p>
+                    <label for="28-quantity">No.of Seats</label>
+                    <input type="number" id="28-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="The Lion King (2019)" data-price="10">Add to Cart</button>
+                </div>
+        
+                <div class="movie-item">
+                    <img src="Frozen2.jpg" alt="Frozen II (2019)">
+                    <p>Frozen II (2019)</p>
+                    <p>$10</p>
+                    <label for="29-quantity">No.of Seats</label>
+                    <input type="number" id="29-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Frozen II (2019)" data-price="10">Add to Cart</button>
+                </div>
+            
+                <div class="movie-item">
+                    <img src="ToyStory4.jpg" alt="Toy Story 4 (2019)">
+                    <p>Toy Story 4 (2019)</p>
+                    <p>$10</p>
+                    <label for="30-quantity">No.of Seats</label>
+                    <input type="number" id="30-quantity" min="0" value="1">
+                    <button type="button" class="add-to-cart" data-name="Toy Story 4 (2019)" data-price="10">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        
+
+     
+                
+                <div class="movie-category">
+                    <h2 id="set-04">3D & IMAX Shows</h2>
+                    <div class="flex-container">
+                
+                        <div class="movie-item">
+                            <img src="Avatar.webp" alt="Avatar: The Way of Water (2022)">
+                            <p>Avatar: The Way of Water (2022)</p>
+                            <p>$11</p>
+                            <label for="31-quantity">No.of Seats</label>
+                            <input type="number" id="31-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Avatar: The Way of Water (2022)" data-price="11">Add to Cart</button>
+                        </div>
+        
+                        <div class="movie-item">
+                            <img src="Gravity.jpg" alt="Gravity (2013)">
+                            <p>Gravity (2013)</p>
+                            <p>$11</p>
+                            <label for="32-quantity">No.of Seats</label>
+                            <input type="number" id="32-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Gravity (2013)" data-price="11">Add to Cart</button>
+                        </div>
+                        
+                        <div class="movie-item">
+                            <img src="Interstellar.jpg" alt="Interstellar (2014)">
+                            <p>Interstellar (2014)</p>
+                            <p>$11</p>
+                            <label for="33-quantity">No.of Seats</label>
+                            <input type="number" id="33-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Interstellar (2014)" data-price="11">Add to Cart</button>
+                        </div>
+                
+                        <div class="movie-item">
+                            <img src="TheDarkKnight.jpg" alt="The Dark Knight (2008)">
+                            <p>The Dark Knight (2008)</p>
+                            <p>$11</p>
+                            <label for="34-quantity">No.of Seats</label>
+                            <input type="number" id="34-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="The Dark Knight (2008)" data-price="11">Add to Cart</button>
+                        </div>
+                    
+                        <div class="movie-item">
+                            <img src="DoctorStrange.jpg" alt="Doctor Strange (2016)">
+                            <p>Doctor Strange (2016)</p>
+                            <p>$11</p>
+                            <label for="35-quantity">No.of Seats</label>
+                            <input type="number" id="35-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Doctor Strange (2016)" data-price="11">Add to Cart</button>
+                        </div>
+                    
+                        <div class="movie-item">
+                            <img src="JurassicWorld(2015).webp" alt="Jurassic World (2015)">
+                            <p>Jurassic World (2015)</p>
+                            <p>$11</p>
+                            <label for="36-quantity">No.of Seats</label>
+                            <input type="number" id="36-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Jurassic World (2015)" data-price="11">Add to Cart</button>
+                        </div>
+                    
+                        <div class="movie-item">
+                            <img src="TransformersAge.jpg" alt="Transformers: Age of Extinction (2014)">
+                            <p>Transformers: Age of Extinction (2014)</p>
+                            <p>$11</p>
+                            <label for="37-quantity">No.of Seats</label>
+                            <input type="number" id="37-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Transformers: Age of Extinction (2014)" data-price="11">Add to Cart</button>
+                        </div>
+            
+                        <div class="movie-item">
+                            <img src="TheHobbit.jpg" alt="The Hobbit: An Unexpected Journey (2012)">
+                            <p>The Hobbit: An Unexpected Journey (2012)</p>
+                            <p>$11</p>
+                            <label for="38-quantity">No.of Seats</label>
+                            <input type="number" id="38-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="The Hobbit: An Unexpected Journey (2012)" data-price="11">Add to Cart</button>
+                        </div>
+                        
+                        <div class="movie-item">
+                            <img src="TheLionKing(2019).jpg" alt="The Lion King (2019)">
+                            <p>The Lion King (2019)</p>
+                            <p>$11</p>
+                            <label for="39-quantity">No.of Seats</label>
+                            <input type="number" id="39-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="The Lion King (2019)" data-price="11">Add to Cart</button>
+                        </div>
+                
+                        <div class="movie-item">
+                            <img src="Avatar2.jpg" alt="Avatar (2009)">
+                            <p>Avatar (2009)</p>
+                            <p>$11</p>
+                            <label for="40-quantity">No.of Seats</label>
+                            <input type="number" id="40-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Avatar (2009)" data-price="11">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+        <br>
+        <br>
+        
+        
+    
+                <div class="movie-category">
+                    <h2 id="set-05">Special Discount Offers</h2>
+                    <div class="flex-container">
+            
+                        <div class="movie-item">
+                            <img src="AvengersEndgame.jpg" alt="Avengers Endgame (2019)">
+                            <p>Avengers: Endgame (2019)</p>
+                            <p>$7</p>
+                            <label for="41-quantity">No.of Seats</label>
+                            <input type="number" id="41-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Avengers: Endgame (2019)" data-price="7">Add to Cart</button>
+                        </div>
+                
+                        <div class="movie-item">
+                            <img src="Star.jpg" alt="Star Wars: The Force Awakens (2015)">
+                            <p>Star Wars: The Force Awakens (2015)</p>
+                            <p>$7</p>
+                            <label for="42-quantity">No.of Seats</label>
+                            <input type="number" id="42-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Star Wars: The Force Awakens (2015)" data-price="7">Add to Cart</button>
+                        </div>
+            
+                        <div class="movie-item">
+                            <img src="JurassicWorld(2015).webp" alt="Jurassic World (2015)">
+                            <p>Jurassic World (2015)</p>
+                            <p>$7</p>
+                            <label for="43-quantity">No.of Seats</label>
+                            <input type="number" id="43-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Jurassic World (2015)" data-price="7">Add to Cart</button>
+                        </div>
+                        
+                        <div class="movie-item">
+                            <img src="WonderWoman(2017).jpg" alt="Wonder Woman (2017)">
+                            <p>Wonder Woman (2017)</p>
+                            <p>$7</p>
+                            <label for="44-quantity">No.of Seats</label>
+                            <input type="number" id="44-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Wonder Woman (2017)" data-price="7">Add to Cart</button>
+                        </div>
+                    
+                        <div class="movie-item">
+                            <img src="Deadpool.png" alt="Deadpool (2016)">
+                            <p>Deadpool (2016)</p>
+                            <p>$7</p>
+                            <label for="45-quantity">No.of Seats</label>
+                            <input type="number" id="45-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Deadpool (2016)" data-price="7">Add to Cart</button>
+                        </div>
+                    
+                        <div class="movie-item">
+                            <img src="HarryPotter.jpg" alt="Harry Potter and the Sorcerer's Stone (2011)">
+                            <p>Harry Potter and the Sorcerer's Stone (2011)</p>
+                            <p>$7</p>
+                            <label for="46-quantity">No.of Seats</label>
+                            <input type="number" id="46-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Harry Potter and the Sorcerer's Stone (2011)" data-price="7">Add to Cart</button>
+                        </div>
+                
+                        <div class="movie-item">
+                            <img src="incredibles2.jpg" alt="The Incredibles 2 (2018)">
+                            <p>The Incredibles 2 (2018)</p>
+                            <p>$7</p>
+                            <label for="47-quantity">No.of Seats</label>
+                            <input type="number" id="47-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="The Incredibles 2 (2018)" data-price="7">Add to Cart</button>
+                        </div>
+    
+                        <div class="movie-item">
+                            <img src="ToyStory4.jpg" alt="Toy Story 4 (2019)">
+                            <p>Toy Story 4 (2019)</p>
+                            <p>$7</p>
+                            <label for="48-quantity">No.of Seats</label>
+                            <input type="number" id="48-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Toy Story 4 (2019)" data-price="7">Add to Cart</button>
+                        </div>
+                
+                        <div class="movie-item">
+                            <img src="frozen2.jpg" alt="Frozen II (2019)">
+                            <p>Frozen II (2019)</p>
+                            <p>$7</p>
+                            <label for="49-quantity">No.of Seats</label>
+                            <input type="number" id="49-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="Frozen II (2019)" data-price="7">Add to Cart</button>
+                        </div>
+                
+                        <div class="movie-item">
+                            <img src="TheLionKing(2019).jpg" alt="The Lion King (2019)">
+                            <p>The Lion King (2019)</p>
+                            <p>$7</p>
+                            <label for="50-quantity">No.of Seats</label>
+                            <input type="number" id="50-quantity" min="0" value="1">
+                            <button type="button" class="add-to-cart" data-name="The Lion King (2019)" data-price="7">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+        <br>
+        <br>
+        <br>
+        
+        
+                <!-- Current Order -->
+                <section>
+                    <h2>Current Order</h2>
+                    <table id="order-table">
+                        <thead>
+                            <tr>
+                                <th>Movie</th>
+                                <th>No.of Seats</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Items will be dynamically added here -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Total Price</td>
+                                <td id="total-price">$0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
+                    <div class="button-row">
+                    <button id="addToFavourites">Add to Favourites</button>
+                    <button id="applyFavourites">Apply Favourites</button>
+                    <button id="reset-cart">Reset</button>
+                    <button id="proceed-to-checkout" onclick="location.href='checkout.html'">Proceed to Checkout</button></div>
+                    <div id="favouritesList"></div>
+                
+        
+                    
+
+                </section>
+            </main>
+        
+            <!-- Footer -->
+            <footer>
+                <section class="contact-info">
+                    <h2>Connect with Us</h2>
+                    <p><strong>Hotline:</strong> <a href="tel:+94117743567">+94 11 7743567</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@Filmique.com">info@Filmique.com</a></p>
+                    <p><strong>Address:</strong>Filmique Cinemas<br>
+                    1423 Pacific Breed Blvd<br>
+                Santa Marina<br>
+                CA 90234<br>
+                        
+                    </p>
+                    <p><a href="https://maps.app.goo.gl/kXkDv7BJgtERfnEE9" target="_blank" title="View Filmique Cinemas on Google Maps">View On Google Maps</a></p>
+                
+                <p><a href="privacy-policy.html">Privacy Policy</a><br><a href="terms-of-service.html">Terms of Service</a></p>
+                <p>&copy; 2025 @Filmique Cinemas. All rights reserved.</p>
+                </section>
+            </footer>
+        
+            <!-- JavaScript -->
+            <script src="index.js"></script>
+        </body>
+        </html>
+        

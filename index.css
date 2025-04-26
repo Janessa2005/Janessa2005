@@ -1,0 +1,478 @@
+/* Define color variables */
+:root {
+    --primary-color: #003366;        /* Dark Blue */
+    --secondary-color: #005B96;      /* Strong Blue */
+    --background-color: #F0F8FF;     /* Alice Blue */
+    --text-color: #000000;           /* Black */
+    --border-color: #B0C4DE;         /* Light Steel Blue */
+    --white-color: #FFFFFF;          /* White */
+    --light-gray-color: #D3D3D3;     /* Light Gray */
+    --highlight-color: #FFD700;      /* Gold for highlights */
+    --focus-color: #FF8C00;          /* Dark Orange for focus */
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    color: var(--primary-color);
+    text-align: center;
+  }
+  
+  h1 {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  p {
+    color: var(--text-color);
+  }
+
+
+
+
+
+  
+  .logo {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+    align-items: flex-start;
+  }
+  
+  /* Search Form Styles */
+  .search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .search-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    width: 250px;
+  }
+  
+  .search-form button {
+    padding: 10px 20px;
+    background-color: rgb(255, 203, 200);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-form button:hover {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+  }
+  
+  /* Focus Styles for Interactive Elements */
+  a, button {
+    outline: none;
+  }
+  
+  a:focus, button:focus {
+    border: 2px solid var(--focus-color);
+    box-shadow: 0 0 5px var(--focus-color);
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: lightpink;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: var(--white-color);
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    padding: 10px 20px;
+    display: block;
+    font-size: 16px;
+    color: var(--white-color);
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+  }
+  
+  /* Header and Footer Styles */
+  header, footer {
+    background-color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--white-color);
+  }
+  
+  header *, footer * {
+    color: var(--white-color);
+  }
+  
+  .header-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Grid container for medicine items */
+  .flex-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  /* Medicine item styles */
+  .movie-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+ 
+
+
+  .movie-item img {
+    width: 250px; /* Set your desired width */
+    aspect-ratio: 4/6;
+    object-fit: cover; /* Ensures the image maintains its aspect ratio while fitting */
+    border-radius: 5px;
+}
+  
+  .movie-item p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .movie-item button {
+    margin-top: 10px;
+    background-color: rgb(255, 213, 5);
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .movie-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  .movie-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 1200px) {
+    .flex-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .flex-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .flex-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .flex-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Section Headings */
+
+  #set-01 {
+    color: #ac72de;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+
+  #set-02 {
+    color: #007bff;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  
+  #set-03 {
+    color: #d9534f;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  #set-04 {
+    color: #17a2b8;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  #set-05 {
+    color: #f0ad4e;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Section-specific medicine-category classes */
+  .category-blue {
+    background-color: #eef4fc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .category-red {
+    background-color: #fcf2f2;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .category-teal {
+    background-color: #e3f7f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .category-yellow {
+    background-color: #fdf7e3;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Order Section */
+  section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Order Table */
+  #order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  #order-table th, #order-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  #order-table th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #order-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #order-table tfoot td {
+    font-weight: bold;
+    color: #333;
+  }
+
+
+
+  #checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  #checkout-table th, #order-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  #checkout-table th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #checkout-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #checkout-table tfoot td {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Button Styles */
+  button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #buy-now {
+    background-color: #007bff;
+  
+  }
+  
+  #buy-now:hover {
+    background-color: #218838;
+  }
+  
+  #reset-cart {
+    background-color: #e40000fd;
+  
+  }
+  
+  
+  
+  #addToFavourites {
+    background-color: #007bff;
+  
+  }
+  
+
+  
+  
+  
+  
+  footer .category-blue,
+  footer .category-red,
+  footer .category-teal,
+  footer .category-yellow,
+  footer section,
+  footer div {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 auto;
+    max-width: none;
+    text-align: center;
+  }
+
+
+  form {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, select, button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Container for buttons */
+.button-row {
+  display: flex; /* Align items horizontally using flexbox */
+  flex-wrap: nowrap; /* Prevent wrapping to a new line */
+  justify-content: space-between; /* Ensure even spacing */
+  align-items: center; /* Vertically center items */
+  margin: 20px 0;
+  gap: 10px; /* Add spacing between buttons */
+}
+
+/* Style for individual buttons */
+.button-row button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+.button-row button:hover {
+  background-color: #0056b3;
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <img src="filmiquelogo.png" class="logo" alt="Filmique Cinemas logo">
+        <h1>Checkout Page</h1>
+    
+
+    
+    </header>
+    
+       <main>
+        <!-- Order Summary -->
+        <section>
+            <h2>Your Order</h2>
+            <table id="checkout-table">
+                <thead>
+                    <tr>
+                        <th>Movie</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Items will be dynamically added -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Price</td>
+                        <td id="checkout-total-price">Rs.0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Buyer Details -->
+        <section>
+            <h2>Buyer Information</h2>
+            <form>
+                <label for="buyer-name">Full Name:</label>
+                <input type="text" id="buyer-name" required><br><br>
+
+                <label for="buyer-email">Email Address:</label>
+                <input type="email" id="buyer-email" required><br><br>
+
+                <label for="seat-preferences">Seat Preferences:</label>
+                <select id="seat-preferences" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Front">Front</option>
+                    <option value="Middle">Middle</option>
+                    <option value="Back">Back</option>
+                </select><br><br>
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Debit Card">Debit Card</option>
+                    <option value="PayPal">PayPal</option>
+                </select><br><br>
+
+                <button type="button" id="pay-now">Pay Now</button>
+                
+            </form>
+        </section>
+
+        <!-- Confirmation Section -->
+        <section id="confirmation-message" style="display: none;">
+            <h2>Thank You for Your Purchase!</h2>
+            <p><strong>Movie Names:</strong> <span id="confirm-movie-name"></span></p>
+            <p><strong>Movie Time:</strong> <span id="confirm-movie-time"></span></p>
+            <p><strong>Number of Seats:</strong> <span id="confirm-number-of-seats"></span></p>
+            <p><strong>Reference Number:</strong> <span id="confirm-reference"></span></p>
+        </section>
+    </main>
+    <footer>
+        <section class="contact-info">
+            <h2>Connect with Us</h2>
+            <p><strong>Hotline:</strong> <a href="tel:+94117743567">+94 11 7743567</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@Filmique.com">info@Filmique.com</a></p>
+            <p><strong>Address:</strong>Filmique Cinemas<br>
+            1423 Pacific Breed Blvd<br>
+        Santa Marina<br>
+        CA 90234<br><br>
+                
+            </p>
+            <p><a href="https://maps.app.goo.gl/kXkDv7BJgtERfnEE9" target="_blank" title="View Filmique Cinemas on Google Maps">View On Google Maps</a></p>
+        
+        <p><a href="privacy-policy.html">Privacy Policy</a><br><a href="terms-of-service.html">Terms of Service</a></p>
+    
+        <p>&copy; 2025 @Filmique Cinemas. All rights reserved.</p>
+        </section>
+    </footer>
+    
+    <script src="checkout.js"></script>
+</body>
+</html>
